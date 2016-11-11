@@ -82,7 +82,7 @@ public class TicketServiceImpl implements TicketService {
 		boolean seatsFoundFlag = false;
 
 		//if numseats is more the the max columns count then no need trying to get the seats next to each other
-		if(numSeats < 33)
+		if(numSeats <= 33)
 			//First we will try to get all seats in the same rows as far away from the screen as possible
 			for(int row = 0; row < 10  ; row++ ){
 				boolean breakFlag = false;
@@ -218,7 +218,7 @@ public class TicketServiceImpl implements TicketService {
 		int currentColor = getValueAt(venue, row, column);
 		if (currentColor == colorToReplace) {
 			Seat seat = new Seat();
-			seat.setColumn(column);
+			seat.setColumn(column + 1);
 			seat.setRow(String.valueOf(ApplicationConstants.rows.charAt(row)));
 			seats.add(seat);
 			venue[row][column] = colorToPaint;
