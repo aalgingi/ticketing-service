@@ -22,8 +22,8 @@ The service is build using spring boot, swagger, embedded Tomcat server, and an 
 # Running
 To run the test cases and package the app use the following maven command at the root directory of your project
 
-mvn clean install
++ mvn clean install
 
-To start-up the app using the embedded tomcat server, simple run the jar file locates in the target directory using the command below at the project root directory. One the embedded tomcat server is running, visit http://localhost:8080/ticketing-service/api/v1/swagger-ui.html in your browser to view the swagger documentation and test the API. NOTE: Make sure nothing else is running on port 8080 since this is the port tomcat uses by default
+To start-up the app using the embedded tomcat server, simple run the jar file located in the target directory using the command below at the project root directory. Once the embedded tomcat server is running, visit http://localhost:8080/ticketing-service/api/v1/swagger-ui.html in your browser to view the swagger documentation and test the API. NOTE: Make sure nothing else is running on port 8080 since this is the port tomcat uses by default
 
-java -jar ./target/
++ java -jar ./target/
