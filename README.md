@@ -10,7 +10,7 @@ The service is build using spring boot, swagger, embedded Tomcat server, and an 
 # Assumptions
 
  + This is for a single venue with a capacity of 297 seats (9 rows x 33 columns) as proposed in the problem description
- + Holds expire after 30 minutes
+ + Holds expire after 60 minutes
  + The venue rows are label A - I, A being in front of the stage
  + Like a movie theater, the best seats are as close to the middle of the venue as possible
 
